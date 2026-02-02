@@ -510,7 +510,7 @@ if __name__ == "__main__":
     # Step II -- line fitting for log gc systems
     load_dns_catalogue(
         plot_type='log', # 'log' or 'linear'. "linear" does not stick well here though
-        path='C:/Users/mrosc/FRI/2.summer&fall_research/files/', # if not in the same directory, should start from CD to the folder. Otherwise, leave ''.
+        path='', # if not in the same directory, should start from CD to the folder. Otherwise, leave ''.
         cache_file='dns_He_catalogue.csv',
         print_dt = False, # prints auxiliary data table {outdated}
         grid = False, # grid on the graph (bool)
@@ -528,5 +528,6 @@ if __name__ == "__main__":
 
     if data[2]: print('The system remained bound after mass loss.')
     else: print('The system became unbound after mass loss.')
+
 
     print('\nAll simulations successful.\n') # flag that no errors occurred and files are re-generated
